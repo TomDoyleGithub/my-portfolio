@@ -1,3 +1,4 @@
+/* The root selector which holds all my variables */
 :root {
     /* Rubik font */
     --rubik: 'Rubik', sans-serif;
@@ -11,4 +12,52 @@
     --bold: 700;
     --extra-bold: 800;
     --black: 900;
+    /* Color scheme */
+    --dark-gray: #353A3F;
+    --candy-red: #DE3A53;
+    --light-red: #de3a5344;
+}
+
+/* General styling of the navigation */
+nav {
+    display: grid;
+    grid-template: 100% / minmax(5px, 10px) 1fr minmax(100px, 600px) 1fr minmax(5px, 10px);
+    align-items: center;
+    height: 80px;
+    width: 95%;
+    margin: auto;
+    font-family: var(--poppins);
+    font-weight: var(--semi-bold);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Styling the images in the nav */
+nav img {
+    height: auto;
+    border: 1px solid  black;
+}
+
+/* Specific styling of the logo image in navigation */
+.logo {
+    grid-column: 2;
+    margin-right: auto;
+}
+
+/* Specific styling of the social icon in navigation */
+.social {
+    grid-column: 4;
+   margin-left: auto;
+}
+
+/* Editing the flex properties of the navigation text */
+nav section {
+    display: grid;
+    grid-template: 100% / repeat(4, 1fr);
+}
+
+/* Changing the style of the navigation links */
+nav a {
+    text-decoration: none;
+    color: var(--dark-gray);
 }
