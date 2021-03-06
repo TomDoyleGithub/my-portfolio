@@ -54,10 +54,25 @@ nav img {
 nav section {
     display: grid;
     grid-template: 100% / repeat(4, 1fr);
+    height: 100%;
+    align-items: center;
 }
 
 /* Changing the style of the navigation links */
 nav a {
     text-decoration: none;
     color: var(--dark-gray);
+    transition: all 100ms ease-in-out;
+}
+
+/* Changing the display of the navigation links when hovered */
+nav a:hover {
+    font-size: 14px;
+    opacity: 50%;
+    transform:skew(-4deg)
+}
+
+/* Changing the display of the navigation links when active */
+nav a:active {
+    font-size: 10px;
 }
