@@ -143,7 +143,7 @@ header article button {
     font-family: var(--poppins);
     background-color: var(--candy-red);
     color: white;
-    padding: 10px 30px;
+    padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 150ms ease-in-out;
@@ -158,6 +158,12 @@ header article button:active {
     font-size: 15px;
 }
 
+header article button img {
+    height: 18px;
+    margin-right: 8px;
+    position: relative;
+    top: 3px
+}
 /* Below are media queries */
 
 @media screen and (max-width: 770px) {
