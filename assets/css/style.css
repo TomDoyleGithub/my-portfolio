@@ -114,10 +114,15 @@ header {
 
 /* General styling of the section */
 header article {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 50px;
     border-radius: 10px;
     background-color: var(--white);
     grid-column: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* Style for the folder image */
@@ -126,6 +131,17 @@ header article {
     width: 15vw;
     position: relative;
     right: 45%;
+    z-index: 2;
+}
+
+.white-corner {
+    grid-column: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    image-rendering: optimizeQuality;
+    image-rendering: crisp-edges;
 }
 
 /* This is the styling of the paragraph elements in the header */
@@ -183,6 +199,11 @@ header article button img {
         display: none;
     }
 
+    /* Changes the overall padding of the header box */
+    header article {
+        padding: 40px;
+    }
+
 
     /* Changes the header grid layout */
     .header-grid {
@@ -194,6 +215,7 @@ header article button img {
         align-items: center;
     }
 
+    /* Makes the folder icon vanish */
     .folder {
         display: none;
     }
