@@ -37,6 +37,8 @@ nav {
     font-weight: var(--semi-bold);
     font-size: 13px;
     text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
 /* Styling the images in the nav */
