@@ -53,6 +53,7 @@ nav img {
     transition: all 100ms ease-in-out;
 }
 
+/* Changes the visuals of the logo when hovering */
 .logo:hover {
     opacity: 50%;
     height: 24px;
@@ -192,6 +193,58 @@ header article button img {
     position: relative;
     top: 3px
 }
+
+/* The arching background of the three column grid */
+.three-background {
+    background-color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 4px;
+}
+
+/* This is the main grid inside the backrground container */
+.three-layer {
+    height: 70%;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    display: grid;
+    grid-template: 100% / 1fr 1fr 1fr;
+    column-gap: 25px;
+    line-height: 1.6em;
+    color: var(--dark-gray);
+}
+
+/* The design of every box inside the grid */
+.three-layer article {
+    height: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5%;
+}
+
+.three-layer img {
+    height: 80px;
+    margin-bottom: 30px;
+}
+/* The styling of the h2 elements in the grid */
+.three-layer h2 {
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+    font-weight: var(--extra-bold);
+    font-size: 25px;
+}
+
+.three-layer p {
+    font-family: var(--poppins);
+    font-size: 14px;
+    opacity: 80%;
+}
+
+
 /* Below are media queries */
 
 @media screen and (max-width: 770px) {
@@ -220,5 +273,19 @@ header article button img {
     /* Makes the folder icon vanish */
     .folder {
         display: none;
+    }
+
+    .three-background {
+        height: 1800px;
+    }
+
+    .three-layer {
+        height: 90%;
+        width: 85%;
+        grid-template: 1fr 1fr 1fr / 100%;
+    }
+
+    .three-layer article {
+        height: 80%;
     }
 }
