@@ -108,7 +108,7 @@ header {
     display: grid;
     width: 85%;
     height: 85%;
-    grid-template: 100% / 1fr 1fr;
+    grid-template: 100% / 1.2fr 1fr;
     align-items: center;
 }
 
@@ -118,6 +118,14 @@ header article {
     border-radius: 10px;
     background-color: var(--white);
     grid-column: 1;
+}
+
+/* Style for the folder image */
+.folder {
+    margin: auto;
+    width: 15vw;
+    position: relative;
+    right: 45%;
 }
 
 /* This is the styling of the paragraph elements in the header */
@@ -154,10 +162,12 @@ header article button:hover {
     background-color: var(--dark-gray);
 }
 
+/* Changes the size of the button when clicked */
 header article button:active {
     font-size: 15px;
 }
 
+/* Editing the icon inside the button */
 header article button img {
     height: 18px;
     margin-right: 8px;
@@ -182,5 +192,9 @@ header article button img {
         height: 85%;
         grid-template: 100% / 100%;
         align-items: center;
+    }
+
+    .folder {
+        display: none;
     }
 }
