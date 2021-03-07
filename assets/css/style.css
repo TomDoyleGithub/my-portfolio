@@ -113,6 +113,7 @@ header {
     height: 85%;
     grid-template: 100% / 1.2fr 1fr;
     align-items: center;
+    position: relative;
 }
 
 /* General styling of the section */
@@ -137,11 +138,13 @@ header article {
     z-index: 2;
 }
 
+/* The is the white swerve in the bottom right corner of the header */
 .white-corner {
     grid-column: 2;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -10;
+    margin-right: -20%;
     z-index: 0;
     image-rendering: optimizeQuality;
     image-rendering: crisp-edges;
@@ -226,6 +229,7 @@ header article button img {
     padding-top: 5%;
 }
 
+/* Styling the images in the grid */
 .three-layer img {
     height: 80px;
     margin-bottom: 30px;
@@ -246,6 +250,15 @@ header article button img {
 
 
 /* Below are media queries */
+
+@media screen and (max-width: 900px) {
+
+    .three-layer article {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5%;
+    }
+}
 
 @media screen and (max-width: 770px) {
 
@@ -268,6 +281,13 @@ header article button img {
         height: 85%;
         grid-template: 100% / 100%;
         align-items: center;
+    }
+
+    .white-corner {
+        grid-column: 1;
+        right: 0;
+        bottom: -10;
+        margin-right: -6%;
     }
 
     /* Makes the folder icon vanish */
