@@ -296,7 +296,15 @@ header article button img {
     width: 100%;
     padding: 40px;
     border-radius: 20px;
+    position: relative;
+}
 
+/* Styles the quote arrow on the left side of the article */
+.intro-grid .arrow {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: -15px;
 }
 
 /* This is optimising the image in the grid */
@@ -394,13 +402,10 @@ header article button img {
         height: 80%;
     }
 
+    /* Changes the height for mobile */
     .intro-background {
         height: 100%;
         background-color: var(--light-white);
-        display: flex;
-        align-items: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     
     .intro-grid {
@@ -409,6 +414,8 @@ header article button img {
         align-items: center;
         grid-template: 0.7fr 1fr/ 100%;
         row-gap: 35px;
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 
     .intro-grid img {
@@ -421,5 +428,16 @@ header article button img {
     .intro-grid article {
         grid-row: 2;
     
+    }
+
+    /* Made the quote triangel on top of the article */
+    .intro-grid .arrow {
+        transform: rotate(90deg);
+        height: 80px;
+        width: auto;
+        position: absolute;
+        top: -40px;
+        left: 40%;
+        right: 40%;
     }
 }
