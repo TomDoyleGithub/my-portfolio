@@ -352,6 +352,52 @@ header article button img {
     top: 2px;
 }
 
+/* This is the background for the skills */
+#skills-background {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+/* This is the grid layout for the skills */
+.skills-grid {
+    width: 85%;
+    margin: auto;
+    height: 50%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 100%;
+}
+
+/* Adds padding to the top and bottom of each div */
+.skills-grid div {
+    padding: 20px 0px;
+}
+
+/* Makes the image inline */
+.skills-grid div img {
+    display: inline-block;
+}
+
+/* Makes the paragraphs inline */
+.skills-grid div p {
+    display: inline-block;
+    margin-left: 15px;
+    opacity: 100%;
+}
+
+/* First section of skills with grid layout */
+.skills-one {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+/* Second section of skills with grid layout */
+.skills-two {
+    display: grid;
+    grid-template: 100% / repeat(3, 1fr);
+}
+
 /* Below are media queries */
 
 @media screen and (max-width: 900px) {
@@ -459,5 +505,55 @@ header article button img {
         top: -40px;
         left: 45%;
         right: 45%;
+    }
+
+    /* Made the skills height bigger for mobile */
+    #skills-background {
+        height: 900px;
+    }
+
+    /* Made the height of the skills grid larger */
+    .skills-grid {
+        height: 80%;
+    }
+
+    /* Aligned the h1 text in the center */
+    .skills-grid h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* First section of skills with grid layout */
+    .skills-one {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    /* Second section of skills with grid layout */
+    .skills-two {
+        display: grid;
+        grid-template: 100% / repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    /* Changes width of overall grid */
+    .skills-grid {
+        width: 75%;
+    }
+
+    /* Make the first skills list into one column */
+    .skills-one {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+        display: grid;
+        grid-template: repeat(5, 1fr) / 100%;
+    }
+
+    /* Make the second skills list into one column */
+    .skills-two {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 100%;
     }
 }
