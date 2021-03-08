@@ -275,7 +275,6 @@ header article button img {
 .intro-background {
     height: 800px;
     background-color: var(--light-white);
-    /* border-radius: 0px 700px 0px 0px; */
     display: flex;
     align-items: center;
 }
@@ -366,6 +365,7 @@ header article button img {
         align-items: center;
     }
 
+    /* Changes some values for mobile restrictions */
     .white-corner {
         grid-column: 1;
         right: 0;
@@ -378,10 +378,12 @@ header article button img {
         display: none;
     }
 
+    /* Changes the height of the background to be longer for mobile */
     .three-background {
         height: 1700px;
     }
 
+    /* Changes the grid layout to a row order */
     .three-layer {
         height: 90%;
         width: 85%;
@@ -390,5 +392,34 @@ header article button img {
 
     .three-layer article {
         height: 80%;
+    }
+
+    .intro-background {
+        height: 100%;
+        background-color: var(--light-white);
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .intro-grid {
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        grid-template: 0.7fr 1fr/ 100%;
+        row-gap: 35px;
+    }
+
+    .intro-grid img {
+        grid-row: 1;
+        width: 200px;
+        height: auto;
+        margin: auto;
+    }
+    
+    .intro-grid article {
+        grid-row: 2;
+    
     }
 }
