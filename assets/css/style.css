@@ -425,9 +425,16 @@ header article button img {
         margin: auto;
     }
     
+    /* Centered the content inside the article */
     .intro-grid article {
         grid-row: 2;
+        text-align: center;
     
+    }
+
+    /* Got rid of the non needed padding */
+    .intro-grid p {
+        padding-right: 0px;
     }
 
     /* Made the quote triangel on top of the article */
