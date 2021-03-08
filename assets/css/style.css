@@ -366,16 +366,20 @@ header article button img {
     height: 50%;
     display: grid;
     grid-template: 1fr 1fr 1fr / 100%;
+    row-gap: 40px;
 }
 
 /* Adds padding to the top and bottom of each div */
 .skills-grid div {
-    padding: 20px 0px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* Makes the image inline */
 .skills-grid div img {
     display: inline-block;
+    height: 40px;
 }
 
 /* Makes the paragraphs inline */
@@ -390,10 +394,13 @@ header article button img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    row-gap: 10px;
+    padding-bottom: 10px;
 }
 
 /* Second section of skills with grid layout */
 .skills-two {
+    padding-top: 20px;
     display: grid;
     grid-template: 100% / repeat(3, 1fr);
 }
