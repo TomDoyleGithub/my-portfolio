@@ -21,10 +21,47 @@
     --white: white;
 }
 
-
+/* General styling for the body */
 body {
     background-color: var(--light-white);
+    color: var(--dark-gray);
 }
+
+main {
+    background-color: var(--white);
+}
+
+/* General styling for h1 elements */
+h1 {
+    font-family: var(--poppins);
+    font-weight: var(--extra-bold);
+    font-size: 40px;
+}
+
+/* General styling for h2 elements */
+h2 {
+    font-family: var(--poppins);
+    font-weight: var(--extra-bold);
+    font-size: 25px;
+}
+
+/* General Styling for paragraph elements */
+p {
+    font-family: var(--poppins);
+    line-height: 1.7em;
+}
+
+/* General styling for buttons */
+button {
+    border: none;
+    font-family: var(--poppins);
+    background-color: var(--candy-red);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* General styling of the navigation */
 nav {
     display: grid;
@@ -153,7 +190,6 @@ header article {
 /* This is the styling of the paragraph elements in the header */
 header article p {
     margin-bottom: 15px;
-    font-family: var(--poppins);
     letter-spacing: 1px;
     line-height: 1.6em;
 }
@@ -161,21 +197,11 @@ header article p {
 /* This is the styling of the h1 elements in the header */
 header article h1 {
     margin-bottom: 25px;
-    font-family: var(--poppins);
-    font-weight: var(--extra-bold);
-    font-size: 40px;
 }
 
 /* The styling of the header button */
 header article button {
     margin-top: 20px;
-    border: none;
-    font-family: var(--poppins);
-    background-color: var(--candy-red);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
     transition: all 150ms ease-in-out;
 }
 
@@ -237,17 +263,74 @@ header article button img {
 /* The styling of the h2 elements in the grid */
 .three-layer h2 {
     margin-bottom: 20px;
-    font-family: var(--poppins);
-    font-weight: var(--extra-bold);
-    font-size: 25px;
 }
 
+/* Changing the font size and opacity to paragraph elements */
 .three-layer p {
-    font-family: var(--poppins);
     font-size: 14px;
     opacity: 80%;
 }
 
+/* This is the background section for my intro */
+.intro-background {
+    height: 800px;
+    background-color: var(--light-white);
+    /* border-radius: 0px 700px 0px 0px; */
+    display: flex;
+    align-items: center;
+}
+
+/* The grid layout for the intro */
+.intro-grid {
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template: 100% / 1fr 2fr;
+    column-gap: 5%;
+}
+
+/* This is the styling for the block of text */
+.intro-grid article {
+    background-color: var(--white);
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+/* This is optimising the image in the grid */
+.intro-grid img {
+    height: 50%;
+    width: auto;
+    border-radius: 50%;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/* Minor change to the margin of the h1 element */
+.intro-grid h1 {
+    margin: 20px 0px;
+}
+
+/* Some minor styling to the paragraph elements */
+.intro-grid p {
+    font-size: 15px;
+    opacity: 80%;
+    padding-right: 50px;
+}
+
+/* The button in the article */
+.intro-grid button {
+    margin-top: 35px;
+    transition: all 100ms ease-in-out;
+}
+
+/* Changes the color of the button when hovered on */
+.intro-grid button:hover {
+    background-color: var(--dark-gray);
+}
 
 /* Below are media queries */
 
@@ -296,7 +379,7 @@ header article button img {
     }
 
     .three-background {
-        height: 1800px;
+        height: 1700px;
     }
 
     .three-layer {
