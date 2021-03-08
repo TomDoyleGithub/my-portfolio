@@ -143,7 +143,7 @@ header {
     color: var(--dark-gray);
 }
 
-.header-grid {
+#header-grid {
     margin: auto;
     display: grid;
     width: 85%;
@@ -272,7 +272,7 @@ header article button img {
 }
 
 /* This is the background section for my intro */
-.intro-background {
+#intro-background {
     height: 800px;
     background-color: var(--light-white);
     display: flex;
@@ -377,7 +377,7 @@ header article button img {
 
 
     /* Changes the header grid layout */
-    .header-grid {
+    #header-grid {
         margin: auto;
         display: grid;
         width: 90%;
@@ -416,7 +416,7 @@ header article button img {
     }
 
     /* Changes the height for mobile */
-    .intro-background {
+    #intro-background {
         height: 100%;
         background-color: var(--light-white);
     }
