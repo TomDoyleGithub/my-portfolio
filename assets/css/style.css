@@ -308,7 +308,7 @@ header article button img {
 }
 
 /* This is optimising the image in the grid */
-.intro-grid img {
+.intro-grid .pro-pic {
     height: 50%;
     width: auto;
     border-radius: 50%;
@@ -337,6 +337,19 @@ header article button img {
 /* Changes the color of the button when hovered on */
 .intro-grid button:hover {
     background-color: var(--dark-gray);
+}
+
+/* Changes the size of the button when clicked */
+.intro-grid button:active {
+    font-size: 15px;
+}
+
+/* The book iocon inside the button */
+.intro-grid .book {
+    height: 15px;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
 }
 
 /* Below are media queries */
@@ -418,7 +431,7 @@ header article button img {
         padding-bottom: 150px;
     }
 
-    .intro-grid img {
+    .intro-grid .pro-pic {
         grid-row: 1;
         width: 200px;
         height: auto;
@@ -444,7 +457,7 @@ header article button img {
         width: auto;
         position: absolute;
         top: -40px;
-        left: 40%;
-        right: 40%;
+        left: 45%;
+        right: 45%;
     }
 }
