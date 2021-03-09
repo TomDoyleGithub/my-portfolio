@@ -486,6 +486,11 @@ header article button img {
     top: 30px;
 }
 
+/* THIS IS TO MAKE SURE THAT JAVASCRIPT WORLD IS LARGER THAN ANY OTHER ELEMENT TO MEET THE CRITERIA */
+.small {
+    width: 80%;
+}
+
 /* Added margin to h1 text */
 .works-text h1 {
     margin-bottom: 30px;
