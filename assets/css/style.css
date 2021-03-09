@@ -420,6 +420,7 @@ header article button img {
     grid-template: 100% / 1fr 1fr;
     column-gap: 100px;
     align-items: center;
+    cursor: default;
 }
 
 /* The sub grid layout for my work content */
@@ -436,17 +437,36 @@ header article button img {
     box-shadow: 0px 0px 20px #353a3f18;
     border-radius: 10px;
     padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    cursor: pointer;
+}
+
+.works-boxes div:hover {
+    width: 95%;
+    height: 95%;
+}
+
+.works-boxes div:hover h2,
+.works-boxes div:hover p {
+    opacity: 80%;
 }
 
 /* To edit the h2 elements inside of the boxes */
 .works-boxes h2 {
    font-size: 16px;
-   margin: 5px 0px;
+   margin: 10px 0px;
 }
 
 /* To edit the p elements inside of the boxes */
 .works-boxes p {
     font-size: 14px;
+ }
+
+ /* To style the icons inside the mini grid */
+ .icon-img {
+     height: 30px;
+     opacity: 80%;
+     margin-bottom: 30px;
  }
 
 /* This how I do the dynamic grid layout selected on boxes two and four */
@@ -463,10 +483,29 @@ header article button img {
 /* Added margin to the button */
 .works-text button {
     margin-top: 20px;
+    position: relative;
+    transition: all 100ms ease-in-out;
+    z-index: 1003;
 }
 
+/* The dot pattern outside of the button */
+.works-text button img {
+    position: absolute;
+    height: 30px;
+    opacity: 10%;
+    right: -15px;
+    bottom: -10px;
+    z-index: 1002;
+}
+
+/* Changes the button appearence on hover */
 .works-text button:hover {
     background-color: var(--dark-gray);
+}
+
+/* Changes the button appearence on active */
+.works-text button:active  {
+    font-size: 14px;
 }
 
 /* Adding a margin to the article text to the right of the works section */
@@ -640,7 +679,6 @@ header article button img {
 
     /* Made the grid one column for mobile */
     .works-boxes {
-        border: 1px solid black;
         display: grid;
         grid-template: 1fr 1fr 1fr 1fr / 100%;
         grid-gap: 25px;
