@@ -357,6 +357,7 @@ header article button img {
     height: 700px;
     display: flex;
     align-items: center;
+    cursor: default;
 }
 
 /* This is the grid layout for the skills */
@@ -371,7 +372,7 @@ header article button img {
 
 /* Adds padding to the top and bottom of each div */
 .skills-grid div {
-    padding: 20px 10px;
+    padding: 20px 00px;
     display: flex;
     align-items: center;
 }
@@ -380,6 +381,10 @@ header article button img {
 .skills-grid div img {
     display: inline-block;
     height: 40px;
+}
+
+.skills-grid div:hover img {
+    opacity: 50%;
 }
 
 /* Makes the paragraphs inline */
@@ -394,7 +399,7 @@ header article button img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    row-gap: 10px;
+    row-gap: 15px;
     padding-bottom: 10px;
 }
 
@@ -405,7 +410,90 @@ header article button img {
     grid-template: 100% / repeat(3, 1fr);
 }
 
+/* The grid layout for my works */
+#works-grid {
+    /* border: 1px solid black; */
+    height: 600px;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    column-gap: 100px;
+    align-items: center;
+}
+
+/* The sub grid layout for my work content */
+.works-boxes {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 25px;
+    height: 65%;
+}
+
+/* To select every box inside the sub grid */
+.works-boxes div {
+    box-shadow: 0px 0px 20px #353a3f18;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* To edit the h2 elements inside of the boxes */
+.works-boxes h2 {
+   font-size: 16px;
+   margin: 5px 0px;
+}
+
+/* To edit the p elements inside of the boxes */
+.works-boxes p {
+    font-size: 14px;
+ }
+
+/* This how I do the dynamic grid layout selected on boxes two and four */
+.down-move {
+    position: relative;
+    top: 30px;
+}
+
+/* Added margin to h1 text */
+.works-text h1 {
+    margin-bottom: 30px;
+}
+
+/* Added margin to the button */
+.works-text button {
+    margin-top: 20px;
+}
+
+.works-text button:hover {
+    background-color: var(--dark-gray);
+}
+
+/* Adding a margin to the article text to the right of the works section */
+.works-text p {
+    margin-bottom: 10px;
+}
+
+
 /* Below are media queries */
+
+@media screen and (max-width: 950px) {
+
+    /* The grid layout for my works */
+    #works-grid {
+        height: 800px;
+        grid-template: 1fr 3fr / 100%;
+    }
+    
+    .works-text {
+        text-align: center;
+    }
+
+    /* The sub grid layout for my work content */
+    .works-boxes {
+        grid-row: 2;
+    }
+}
 
 @media screen and (max-width: 900px) {
 
@@ -514,13 +602,10 @@ header article button img {
         right: 45%;
     }
 
-    /* Made the skills height bigger for mobile */
-    #skills-background {
-        height: 900px;
-    }
-
     /* Made the height of the skills grid larger */
     .skills-grid {
+        position: relative;
+        top: 20px;
         height: 80%;
     }
 
@@ -544,7 +629,36 @@ header article button img {
     }
 }
 
+@media screen and (max-width: 500px) {
+
+    /* Increased the height for mobile */
+    #works-grid {
+        margin-top: 100px;
+        height: 1000px;
+        grid-template: 1fr 3fr / 100%;
+    }
+
+    /* Made the grid one column for mobile */
+    .works-boxes {
+        border: 1px solid black;
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 100%;
+        grid-gap: 25px;
+        height: 90%;
+    }
+
+    /* Got rid of the relative positioning for mobile */
+    .down-move {
+        position: static;
+    }
+}
+
 @media screen and (max-width: 330px) {
+
+     /* Made the skills height bigger for mobile */
+     #skills-background {
+        height: 900px;
+    }
 
     /* Changes width of overall grid */
     .skills-grid {
