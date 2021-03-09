@@ -51,6 +51,11 @@ p {
     line-height: 1.7em;
 }
 
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
 /* General styling for buttons */
 button {
     border: none;
@@ -412,7 +417,6 @@ header article button img {
 
 /* The grid layout for my works */
 #works-grid {
-    /* border: 1px solid black; */
     height: 600px;
     width: 85%;
     margin: auto;
@@ -421,11 +425,11 @@ header article button img {
     column-gap: 100px;
     align-items: center;
     cursor: default;
+    padding-bottom: 200px;
 }
 
 /* The sub grid layout for my work content */
 .works-boxes {
-    /* border: 1px solid black; */
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 25px;
@@ -441,9 +445,16 @@ header article button img {
     cursor: pointer;
 }
 
+/* Changes the size when you hover */
 .works-boxes div:hover {
     width: 95%;
     height: 95%;
+}
+
+/* Shrinks the size when you click */
+.works-boxes div:active {
+    width: 92%;
+    height: 92%;
 }
 
 .works-boxes div:hover h2,
