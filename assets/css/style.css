@@ -142,6 +142,23 @@ nav a:active {
     font-size: 10px;
 }
 
+/* This is the up button that take you to the top of the page */
+.up-button {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 200000;
+    opacity: 80%;
+    width: 30px;
+    transition: all 100ms ease-in-out;
+}
+
+.up-button:hover {
+    width: 35px;
+    right: 48.5px;
+    bottom: 48.5px;
+}
+
 /* General header styling */
 header {
     height: 700px;
@@ -156,6 +173,7 @@ header {
     grid-template: 100% / 1.2fr 1fr;
     align-items: center;
     position: relative;
+    z-index: 3000000;
 }
 
 /* General styling of the section */
@@ -236,6 +254,7 @@ header article button img {
     align-items: center;
     position: relative;
     bottom: 4px;
+    z-index: 3000000;
 }
 
 /* This is the main grid inside the backrground container */
@@ -671,6 +690,13 @@ footer {
         height: 85%;
         grid-template: 100% / 100%;
         align-items: center;
+    }
+
+    /* This is the up button that take you to the top of the page */
+    .up-button {
+        right: 20px;
+        bottom: 20px;
+        width: 30px;
     }
 
     /* Changes some values for mobile restrictions */
