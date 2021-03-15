@@ -699,6 +699,12 @@ footer {
         width: 30px;
     }
 
+    .up-button:hover {
+        right: 20px;
+        bottom: 20px;
+        width: 30px;
+    }
+
     /* Changes some values for mobile restrictions */
     .white-corner {
         grid-column: 1;
