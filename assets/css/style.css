@@ -80,7 +80,7 @@ nav {
     font-size: 13px;
     text-align: center;
     position: relative;
-    z-index: 1000;
+    z-index: 40000000;
 }
 
 /* Styling the images in the nav */
