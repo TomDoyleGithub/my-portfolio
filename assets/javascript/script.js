@@ -10,28 +10,24 @@ var otSeconds = 0;
 function navFadeIn () {
     var navInterval = setInterval(function() {
         seconds++
-        console.log(seconds)
-        if (seconds === 1) {
+        if (seconds >= 1 && seconds < 3) {
             navigation.style.opacity = "100%";
-        };
-        if (seconds === 2) {
+        } else {
             clearInterval(navInterval);
-        };
+        }
     }, 400)
 };
 
 // Function for the header fade in
 function headFadeIn () {
-    var navInterval = setInterval(function() {
+    var headInterval = setInterval(function() {
         otSeconds++
-        console.log(otSeconds)
-        if (otSeconds === 1) {
+        if (otSeconds >= 1 && otSeconds < 3) {
             headerInformation.children[0].style.opacity = "100%"
             headerInformation.children[1].style.opacity = "100%"
-        };
-        if (otSeconds === 2) {
-            clearInterval(navInterval);
-        };
+        } else {
+            clearInterval(headInterval);
+        }
     }, 200)
 };
 
