@@ -67,6 +67,11 @@ button {
     cursor: pointer;
 }
 
+#page-top {
+    transition: all 200ms ease-in-out;
+    opacity: 0%;
+}
+
 /* General styling of the navigation */
 nav {
     display: grid;
@@ -187,6 +192,8 @@ header article {
     grid-column: 1;
     position: relative;
     z-index: 1;
+    opacity: 0%;
+    transition: all 200ms ease-in-out;
 }
 
 /* Style for the folder image */
@@ -196,6 +203,8 @@ header article {
     position: relative;
     right: 45%;
     z-index: 2;
+    opacity: 0%;
+    transition: all 200ms ease-in-out;
 }
 
 /* The is the white swerve in the bottom right corner of the header */
