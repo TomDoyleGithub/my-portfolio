@@ -207,6 +207,19 @@ header article {
     z-index: 2;
     opacity: 0%;
     transition: all 200ms ease-in-out;
+    animation: test 2s ease infinite;
+}
+
+@keyframes test {
+	0% {
+		top: 0px;
+	}
+	50% {
+		top: -20px;
+	}
+    100% {
+		top: 0px;
+	}
 }
 
 /* The is the white swerve in the bottom right corner of the header */

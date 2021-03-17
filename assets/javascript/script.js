@@ -5,10 +5,6 @@ let anchorList = document.querySelectorAll(".scroll");
 var seconds = 0;
 var otSeconds = 0;
 
-
-
-
-
 // Function for the navigation fade in
 function navFadeIn () {
     var navInterval = setInterval(function() {
@@ -34,6 +30,7 @@ function headFadeIn () {
     }, 200)
 };
 
+// Smooth scroll when clicked
 anchorList.forEach (function(link) {
     link.addEventListener("click", function(event) {
         event.preventDefault();
