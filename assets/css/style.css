@@ -317,16 +317,28 @@ header article button img {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5%;
+    cursor: default;
+    position: relative;
 }
 
 /* Styling the images in the grid */
 .three-layer img {
     height: 80px;
     margin-bottom: 30px;
+    transition: all 200ms ease-in-out;
 }
 /* The styling of the h2 elements in the grid */
 .three-layer h2 {
     margin-bottom: 20px;
+    transition: all 100ms ease-in-out;
+}
+
+.three-layer article:hover h2 {
+    letter-spacing: 2px;
+}
+
+.three-layer article:hover img {
+    height: 100px;
 }
 
 /* Changing the font size and opacity to paragraph elements */
