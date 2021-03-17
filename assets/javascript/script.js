@@ -1,6 +1,7 @@
 var navigation = document.getElementById("page-top");
 var headerInformation = document.getElementById("header-grid");
 var threeGrid = document.getElementsByClassName("three-layer");
+let anchorList = document.querySelectorAll(".scroll"); 
 var seconds = 0;
 var otSeconds = 0;
 
@@ -32,6 +33,14 @@ function headFadeIn () {
         }
     }, 200)
 };
+
+anchorList.forEach (function(link) {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        let destination =  document.querySelector(this.hash); 
+        destination.scrollIntoView({behavior: "smooth"});
+    });
+})
 
 navFadeIn();
 headFadeIn();
