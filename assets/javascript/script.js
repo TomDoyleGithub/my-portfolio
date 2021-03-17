@@ -1,7 +1,9 @@
 var navigation = document.getElementById("page-top");
-var headerInformation = document.getElementById("header-grid")
+var headerInformation = document.getElementById("header-grid");
+var threeGrid = document.getElementsByClassName("three-layer");
 var seconds = 0;
 var otSeconds = 0;
+
 
 
 

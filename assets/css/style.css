@@ -170,6 +170,8 @@ header {
     color: var(--dark-gray);
 }
 
+
+
 #header-grid {
     margin: auto;
     display: grid;
@@ -235,11 +237,27 @@ header article h1 {
 header article button {
     margin-top: 20px;
     transition: all 150ms ease-in-out;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* When you hover over the button it changes to thos color */
 header article button:hover {
     background-color: var(--dark-gray);
+    opacity: 75%;
 }
 
 /* Changes the size of the button when clicked */
