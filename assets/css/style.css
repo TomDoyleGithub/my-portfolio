@@ -452,6 +452,8 @@ header article button img {
     display: grid;
     grid-template: 1fr 1fr 1fr / 100%;
     row-gap: 40px;
+    opacity: 0%;
+    transition: all 200ms ease-in-out;
 }
 
 /* Adds padding to the top and bottom of each div */
@@ -505,6 +507,8 @@ header article button img {
     align-items: center;
     cursor: default;
     padding-bottom: 200px;
+    opacity: 0%;
+    transition: all 200ms ease-in-out;
 }
 
 /* The sub grid layout for my work content */

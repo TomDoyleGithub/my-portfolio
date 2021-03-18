@@ -4,7 +4,10 @@ var threeGrid = document.getElementsByClassName("three-layer");
 let anchorList = document.querySelectorAll(".scroll"); 
 var mePage = document.querySelector(".intro-grid")
 var learnMoreButton = mePage.children[1].children[4];
-
+var skillsPage = document.querySelector(".skills-grid");
+var firstSkillsList = skillsPage.children[1].children[0];
+var worksPage = document.querySelector("#works-grid");
+var worksInfo = worksPage.children[1].children[2];
 
 // Function for the navigation fade in
 function navFadeIn () {
@@ -42,7 +45,6 @@ anchorList.forEach (function(link) {
     });
 })
 
-
 // If they are on Desktop it will run the scrollFades function, If not, then it keeps the elements at 100%
 var pageWidth = window.innerWidth;
 if (pageWidth > 771) {
@@ -50,6 +52,8 @@ if (pageWidth > 771) {
 } else {
     threeGrid[0].style.opacity = "100%";
     mePage.style.opacity = "100%";
+    skillsPage.style.opacity = "100%";
+    worksPage.style.opacity = "100%";
 }
 
 // When the page scrolls to the bottom of the first grid element, it adds a CSS class of 100% opacity
@@ -61,9 +65,14 @@ function scrollFades () {
         if (learnMoreButton.getBoundingClientRect().top <= window.innerHeight) {
             mePage.style.opacity = "100%";
         }
+        if (firstSkillsList.getBoundingClientRect().top <= window.innerHeight) {
+            skillsPage.style.opacity = "100%";
+        }
+        if (worksInfo.getBoundingClientRect().bottom <= window.innerHeight) {
+            worksPage.style.opacity = "100%";
+        }
     })
 };
-
 
 navFadeIn();
 headFadeIn();
