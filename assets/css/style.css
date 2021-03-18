@@ -210,6 +210,10 @@ header article {
     animation: test 2s ease infinite;
 }
 
+.folder:hover {
+    width: 16vw;
+}
+
 @keyframes test {
 	0% {
 		top: 0px;
@@ -249,7 +253,7 @@ header article h1 {
 /* The styling of the header button */
 header article button {
     margin-top: 20px;
-    transition: all 150ms ease-in-out;
+    transition: all 100ms ease-in-out;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
@@ -269,8 +273,8 @@ header article button {
 
 /* When you hover over the button it changes to thos color */
 header article button:hover {
-    background-color: var(--dark-gray);
-    opacity: 75%;
+    opacity: 80%;
+    animation: gradient 500ms ease infinite;
 }
 
 /* Changes the size of the button when clicked */
@@ -283,7 +287,7 @@ header article button img {
     height: 18px;
     margin-right: 8px;
     position: relative;
-    top: 3px
+    top: 3px;
 }
 
 /* The arching background of the three column grid */
