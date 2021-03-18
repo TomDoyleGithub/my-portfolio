@@ -309,6 +309,12 @@ header article button img {
     column-gap: 25px;
     line-height: 1.6em;
     color: var(--dark-gray);
+    opacity: 0%;
+    transition: all 300ms ease-in-out;
+}
+
+.opacity {
+    opacity: 100%;
 }
 
 /* The design of every box inside the grid */

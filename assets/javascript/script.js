@@ -39,6 +39,13 @@ anchorList.forEach (function(link) {
     });
 })
 
+// When the page scrolls to the bottom of the first grid element, it adds a CSS class of 100% opacity
+window.addEventListener("scroll", function() {
+    if (threeGrid[0].children[0].getBoundingClientRect().bottom <= window.innerHeight) {
+        threeGrid[0].classList.add("opacity");
+    }
+})
+
 navFadeIn();
 headFadeIn();
 
