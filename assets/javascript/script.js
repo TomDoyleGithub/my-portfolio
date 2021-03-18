@@ -2,12 +2,14 @@ var navigation = document.getElementById("page-top");
 var headerInformation = document.getElementById("header-grid");
 var threeGrid = document.getElementsByClassName("three-layer");
 let anchorList = document.querySelectorAll(".scroll"); 
-var seconds = 0;
-var otSeconds = 0;
+var mePage = document.querySelector(".intro-grid")
+var learnMoreButton = mePage.children[1].children[4];
+
 
 // Function for the navigation fade in
 function navFadeIn () {
     var navInterval = setInterval(function() {
+        var seconds = 0;
         seconds++
         if (seconds >= 1 && seconds < 3) {
             navigation.style.opacity = "100%";
@@ -20,6 +22,7 @@ function navFadeIn () {
 // Function for the header fade in
 function headFadeIn () {
     var headInterval = setInterval(function() {
+        var otSeconds = 0;
         otSeconds++
         if (otSeconds >= 1 && otSeconds < 3) {
             headerInformation.children[0].style.opacity = "100%"
@@ -39,12 +42,28 @@ anchorList.forEach (function(link) {
     });
 })
 
+
+// If they are on Desktop it will run the scrollFades function, If not, then it keeps the elements at 100%
+var pageWidth = window.innerWidth;
+if (pageWidth > 771) {
+    scrollFades();
+} else {
+    threeGrid[0].style.opacity = "100%";
+    mePage.style.opacity = "100%";
+}
+
 // When the page scrolls to the bottom of the first grid element, it adds a CSS class of 100% opacity
-window.addEventListener("scroll", function() {
-    if (threeGrid[0].children[0].getBoundingClientRect().bottom <= window.innerHeight) {
-        threeGrid[0].classList.add("opacity");
-    }
-})
+function scrollFades () {
+    window.addEventListener("scroll", function() {
+        if (threeGrid[0].children[0].getBoundingClientRect().bottom <= window.innerHeight) {
+            threeGrid[0].style.opacity = "100%";
+        }
+        if (learnMoreButton.getBoundingClientRect().top <= window.innerHeight) {
+            mePage.style.opacity = "100%";
+        }
+    })
+};
+
 
 navFadeIn();
 headFadeIn();

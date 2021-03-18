@@ -317,10 +317,6 @@ header article button img {
     transition: all 300ms ease-in-out;
 }
 
-.opacity {
-    opacity: 100%;
-}
-
 /* The design of every box inside the grid */
 .three-layer article {
     height: 80%;
@@ -374,6 +370,8 @@ header article button img {
     align-items: center;
     grid-template: 100% / 1fr 2fr;
     column-gap: 5%;
+    opacity: 0%;
+    transition: all 200ms ease-in-out;
 }
 
 /* This is the styling for the block of text */
