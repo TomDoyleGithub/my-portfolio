@@ -9,8 +9,9 @@ var firstSkillsList = skillsPage.children[1].children[0];
 var worksPage = document.querySelector("#works-grid");
 var worksInfo = worksPage.children[1].children[2];
 var upButton = $(".up-button");
-var contactSection = $("#contact-background")
-console.log(contactSection);
+var contactSection = document.querySelector("#contact-background").children[2].children[2];
+
+
 
 // Function for the navigation fade in
 function navFadeIn () {
@@ -66,6 +67,9 @@ function scrollFades () {
             threeGrid[0].style.opacity = "100%";
             upButton.css({"opacity": "80%", "bottom": "50px"});
         } else {
+            upButton.css({"opacity": "0%", "bottom": "30px"});
+        }
+        if(contactSection.getBoundingClientRect().bottom <= window.innerHeight) {
             upButton.css({"opacity": "0%", "bottom": "30px"});
         }
         if (learnMoreButton.getBoundingClientRect().top <= window.innerHeight) {
