@@ -11,6 +11,7 @@ var worksInfo = worksPage.children[1].children[2];
 var upButton = $(".up-button");
 var contactSection = $("#contact-background")
 
+
 // Function for the navigation fade in
 function navFadeIn () {
     var navInterval = setInterval(function() {
@@ -66,9 +67,6 @@ function scrollFades () {
             upButton.css({"opacity": "80%", "bottom": "50px"});
         } else {
             upButton.css({"opacity": "0%", "bottom": "30px"});
-        }
-        if(contactSection.getBoundingClientRect().bottom <= window.innerHeight) {
-            console.log("Hello");
         }
         if (learnMoreButton.getBoundingClientRect().top <= window.innerHeight) {
             mePage.style.opacity = "100%";
