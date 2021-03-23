@@ -10,7 +10,7 @@ var worksPage = document.querySelector("#works-grid");
 var worksInfo = worksPage.children[1].children[2];
 var upButton = $(".up-button");
 var contactSection = $("#contact-background")
-
+console.log(contactSection);
 
 // Function for the navigation fade in
 function navFadeIn () {
