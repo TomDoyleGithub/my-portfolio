@@ -152,8 +152,8 @@ nav a:active {
     position: fixed;
     right: 50px;
     bottom: 50px;
-    z-index: 200000;
-    opacity: 80%;
+    z-index: 5000000;
+    opacity: 0%;
     width: 30px;
     transition: all 100ms ease-in-out;
 }
