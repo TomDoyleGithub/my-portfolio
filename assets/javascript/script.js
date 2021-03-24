@@ -10,6 +10,29 @@ var worksPage = document.querySelector("#works-grid");
 var worksInfo = worksPage.children[1].children[2];
 var upButton = $(".up-button");
 var contactSection = document.querySelector("#contact-background").children[2].children[2];
+var burgerButton = $(".burger");
+var section = $(".navigation-section")
+var cross = $(".cross")
+var navLinks = $(".nav-link")
+
+// Hides the mobile navigation when you click on a link
+navLinks.on("click", function() {
+    section.css({display: 'none'});
+})
+
+// Displays the movile navigation menu
+function mobileNavCreation () {
+    section.css({display: 'block'});
+}
+
+function movileNavDelete () {
+    section.css({display: 'none'});
+}
+
+// Added click event to nav button on click
+burgerButton.on("click", mobileNavCreation)
+cross.on("click", movileNavDelete)
+
 
 
 
