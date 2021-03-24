@@ -127,6 +127,10 @@ nav section {
     align-items: center;
 }
 
+.burger {
+    display: none;
+}
+
 /* Changing the style of the navigation links */
 nav a {
     text-decoration: none;
@@ -738,6 +742,26 @@ footer {
     /* Makes the links dissapear */
     nav section {
         display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        grid-column: 5;
+        padding: 0px;
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+        opacity: 80%;
+    }
+
+    .burger:hover {
+        opacity: 50%;
     }
 
     /* Changes the overall padding of the header box */
