@@ -33,9 +33,6 @@ function movileNavDelete () {
 burgerButton.on("click", mobileNavCreation)
 cross.on("click", movileNavDelete)
 
-
-
-
 // Function for the navigation fade in
 function navFadeIn () {
     var navInterval = setInterval(function() {

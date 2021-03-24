@@ -77,10 +77,12 @@ main {
     right: 40px;
     top: 40px;
     cursor: pointer;
+    transition: all 100ms ease-in-out;
 }
 
 .cross:hover {
     opacity: 50%;
+    transform: rotateX(30deg);
 }
 
 /* General styling for h1 elements */
