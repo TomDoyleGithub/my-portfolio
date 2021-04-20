@@ -24,4 +24,4 @@ I decided to follow my design instincts and went for something modern and sleek.
 ![Landing Page](./assets/images/works.png)
 
 ## End note
-I hope you enjoyed going through my webpage. This is about the best I can do in a week or less :)
+I hope you enjoyed going through my webpage :)
