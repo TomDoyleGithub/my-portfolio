@@ -749,6 +749,7 @@ footer {
     font-weight: var(--light);
     font-size: 14px;
     opacity: 60%;
+    cursor: default;
 }
 
 .resume {
@@ -799,7 +800,12 @@ footer {
     }
 
     .resume {
+        margin-top: 0px;
         grid-column: auto;
+    }
+
+    .social-text {
+        padding-bottom: 30px;
     }
 }
 

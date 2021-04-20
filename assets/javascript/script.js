@@ -9,7 +9,8 @@ var firstSkillsList = skillsPage.children[1].children[0];
 var worksPage = document.querySelector("#works-grid");
 var worksInfo = worksPage.children[1].children[2];
 var upButton = $(".up-button");
-var contactSection = document.querySelector("#contact-background").children[2].children[2];
+var contactSection = document.querySelector("#contact-background").children[1].children[2];
+console.log(contactSection);
 var burgerButton = $(".burger");
 var section = $(".navigation-section")
 var cross = $(".cross")
