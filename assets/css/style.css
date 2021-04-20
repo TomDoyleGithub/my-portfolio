@@ -751,6 +751,23 @@ footer {
     opacity: 60%;
 }
 
+.resume {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    justify-content: center;
+}
+
+.resume-button {
+    background-color: var(--dark-gray);
+    transition: 150ms ease-in-out;
+}
+
+.resume-button:hover {
+    opacity: 70%;
+}
+
 /* Below are media queries */
 
 @media screen and (max-width: 950px) {
@@ -779,6 +796,10 @@ footer {
         grid-template: 1fr 1fr 1fr / 100%;
         row-gap: 25px;
         height: 65%;
+    }
+
+    .resume {
+        grid-column: auto;
     }
 }
 
