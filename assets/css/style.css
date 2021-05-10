@@ -621,6 +621,10 @@ header article button img {
      margin-bottom: 25px;
  }
 
+ #cont {
+     height: 37px !important;
+ }
+
 /* This how I do the dynamic grid layout selected on boxes two and four */
 .down-move {
     position: relative;
