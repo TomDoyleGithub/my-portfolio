@@ -1,1030 +1,1021 @@
 /* The root selector which holds all my variables */
 :root {
-    /* Rubik font */
-    --rubik: 'Rubik', sans-serif;
-    /* Poppins font */
-    --poppins: 'Poppins', sans-serif;
-    /* Font weights */
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 700;
-    --extra-bold: 800;
-    --black: 900;
-    /* Color scheme */
-    --dark-gray: #353A3F;
-    --candy-red: #DE3A53;
-    --light-red: #de3a5344;
-    --light-white: #F6F7F8;
-    --tan: #F9F5F2;
-    --white: white;
+  /* Rubik font */
+  --rubik: "Rubik", sans-serif;
+  /* Poppins font */
+  --poppins: "Poppins", sans-serif;
+  /* Font weights */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  /* Color scheme */
+  --dark-gray: #353a3f;
+  --candy-red: #de3a53;
+  --light-red: #de3a5344;
+  --light-white: #f6f7f8;
+  --tan: #f9f5f2;
+  --white: white;
 }
 
 /* General styling for the body */
 body {
-    background-color: var(--light-white);
-    color: var(--dark-gray);
+  background-color: var(--light-white);
+  color: var(--dark-gray);
 }
 
 main {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 /* Broad styling for the mobile navigation section */
 .navigation-section {
-    background-color: white;
-    width: 100%;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    z-index: 10000000000;
-    display: none;
-    opacity: 100%;
-    transition: opacity 100ms ease-in-out;
+  background-color: white;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  z-index: 10000000000;
+  display: none;
+  opacity: 100%;
+  transition: opacity 100ms ease-in-out;
 }
 
 /* Styling for the links in the mobile navigation */
 .mobile-links {
-    /* border: 1px solid black; */
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    padding-top: 100px;
-    display: grid;
-    align-items: center;
+  /* border: 1px solid black; */
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  padding-top: 100px;
+  display: grid;
+  align-items: center;
 }
 
 /* Direct styling for the mobile links */
 .mobile-links a {
-    /* border: 1px solid black; */
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--rubik);
-    font-weight: 500;
+  /* border: 1px solid black; */
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--rubik);
+  font-weight: 500;
 }
 
 .mobile-links a:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .cross {
-    width: 20px;
-    opacity: 80%;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
+  width: 20px;
+  opacity: 80%;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 .cross:hover {
-    opacity: 50%;
-    transform: rotateX(30deg);
+  opacity: 50%;
+  transform: rotateX(30deg);
 }
 
 /* General styling for h1 elements */
 h1 {
-    font-family: var(--poppins);
-    font-weight: var(--extra-bold);
-    font-size: 40px;
+  font-family: var(--poppins);
+  font-weight: var(--extra-bold);
+  font-size: 40px;
 }
 
 /* General styling for h2 elements */
 h2 {
-    font-family: var(--poppins);
-    font-weight: var(--extra-bold);
-    font-size: 25px;
+  font-family: var(--poppins);
+  font-weight: var(--extra-bold);
+  font-size: 25px;
 }
 
 /* General Styling for paragraph elements */
 p {
-    font-family: var(--poppins);
-    line-height: 1.7em;
+  font-family: var(--poppins);
+  line-height: 1.7em;
 }
 
 a {
-    text-decoration: none;
-    color: var(--dark-gray);
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
 /* General styling for buttons */
 button {
-    border: none;
-    font-family: var(--poppins);
-    background-color: var(--candy-red);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
+  border: none;
+  font-family: var(--poppins);
+  background-color: var(--candy-red);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #page-top {
-    transition: all 200ms ease-in-out;
-    opacity: 0%;
+  transition: all 200ms ease-in-out;
+  opacity: 0%;
 }
 
 /* General styling of the navigation */
 nav {
-    display: grid;
-    grid-template: 100% / 20px 1fr 3fr minmax(100px, 600px) 3fr 1fr 20px;
-    align-items: center;
-    height: 100px;
-    width: 95%;
-    margin: auto;
-    font-family: var(--poppins);
-    font-weight: var(--semi-bold);
-    font-size: 13px;
-    text-align: center;
-    position: relative;
-    z-index: 40000000;
+  display: grid;
+  grid-template: 100% / 20px 1fr 3fr minmax(100px, 600px) 3fr 1fr 20px;
+  align-items: center;
+  height: 100px;
+  width: 95%;
+  margin: auto;
+  font-family: var(--poppins);
+  font-weight: var(--semi-bold);
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  z-index: 40000000;
 }
 
 /* Styling the images in the nav */
 nav img {
-    height: 20px;
+  height: 20px;
 }
 
 /* Specific styling of the logo image in navigation */
 .logo {
-    grid-column: 3;
-    margin-right: auto;
-    transition: all 100ms ease-in-out;
+  grid-column: 3;
+  margin-right: auto;
+  transition: all 100ms ease-in-out;
 }
 
 /* Changes the visuals of the logo when hovering */
 .logo:hover {
-    opacity: 50%;
-    height: 24px;
+  opacity: 50%;
+  height: 24px;
 }
 
 /* Specific styling of the social icon in navigation */
 .social {
-    grid-column: 5;
-    margin-left: auto;
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
+  grid-column: 5;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 .social:hover {
-    opacity: 50%;
-    height: 24px;
+  opacity: 50%;
+  height: 24px;
 }
 
 /* Editing the flex properties of the navigation text */
 nav section {
-    display: grid;
-    grid-template: 100% / repeat(4, 1fr);
-    height: 100%;
-    align-items: center;
+  display: grid;
+  grid-template: 100% / repeat(4, 1fr);
+  height: 100%;
+  align-items: center;
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
 /* Changing the style of the navigation links */
 nav a {
-    text-decoration: none;
-    color: var(--dark-gray);
-    transition: all 100ms ease-in-out;
-    font-size: 13.5px;
+  text-decoration: none;
+  color: var(--dark-gray);
+  transition: all 100ms ease-in-out;
+  font-size: 13.5px;
 }
 
 /* Changing the display of the navigation links when hovered */
 nav a:hover {
-    font-size: 13px;
-    opacity: 50%;
-    transform:skew(-4deg);
+  font-size: 13px;
+  opacity: 50%;
+  transform: skew(-4deg);
 }
 
 /* Changing the display of the navigation links when active */
 nav a:active {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 /* This is the up button that take you to the top of the page */
 .up-button {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    z-index: 5000000;
-    opacity: 0%;
-    width: 30px;
-    transition: all 100ms ease-in-out;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 5000000;
+  opacity: 0%;
+  width: 30px;
+  transition: all 100ms ease-in-out;
 }
 
 .up-button:hover {
-    width: 35px;
-    right: 48.5px;
-    bottom: 48.5px;
+  width: 35px;
+  right: 48.5px;
+  bottom: 48.5px;
 }
 
 /* General header styling */
 header {
-    height: 700px;
-    color: var(--dark-gray);
+  height: 700px;
+  color: var(--dark-gray);
 }
 
-
-
 #header-grid {
-    margin: auto;
-    display: grid;
-    width: 85%;
-    height: 85%;
-    grid-template: 100% / 1.2fr 1fr;
-    align-items: center;
-    position: relative;
-    z-index: 3000000;
+  margin: auto;
+  display: grid;
+  width: 85%;
+  height: 85%;
+  grid-template: 100% / 1.2fr 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 3000000;
 }
 
 /* General styling of the section */
 header article {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 50px;
-    border-radius: 10px;
-    background-color: var(--white);
-    grid-column: 1;
-    position: relative;
-    z-index: 1;
-    opacity: 0%;
-    transition: all 200ms ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background-color: var(--white);
+  grid-column: 1;
+  position: relative;
+  z-index: 1;
+  opacity: 0%;
+  transition: all 200ms ease-in-out;
 }
 
 /* Style for the folder image */
 .folder {
-    margin: auto;
-    width: 15vw;
-    position: relative;
-    right: 45%;
-    z-index: 2;
-    opacity: 0%;
-    transition: all 200ms ease-in-out;
-    animation: test 2s ease infinite;
+  margin: auto;
+  width: 15vw;
+  position: relative;
+  right: 45%;
+  z-index: 2;
+  opacity: 0%;
+  transition: all 200ms ease-in-out;
+  animation: test 2s ease infinite;
 }
 
 .folder:hover {
-    width: 16vw;
+  width: 16vw;
 }
 
 @keyframes test {
-	0% {
-		top: 0px;
-	}
-	50% {
-		top: -20px;
-	}
-    100% {
-		top: 0px;
-	}
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 /* The is the white swerve in the bottom right corner of the header */
 .white-corner {
-    grid-column: 2;
-    position: absolute;
-    right: 0;
-    bottom: -10;
-    margin-right: -20%;
-    z-index: 0;
-    image-rendering: optimizeQuality;
-    image-rendering: crisp-edges;
+  grid-column: 2;
+  position: absolute;
+  right: 0;
+  bottom: -10;
+  margin-right: -20%;
+  z-index: 0;
+  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
 }
 
 /* This is the styling of the paragraph elements in the header */
 header article p {
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-    line-height: 1.6em;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6em;
 }
 
 /* This is the styling of the h1 elements in the header */
 header article h1 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /* The styling of the header button */
 header article button {
-    margin-top: 20px;
-    transition: all 100ms ease-in-out;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+  margin-top: 20px;
+  transition: all 100ms ease-in-out;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* When you hover over the button it changes to thos color */
 header article button:hover {
-    opacity: 80%;
-    animation: gradient 500ms ease infinite;
+  opacity: 80%;
+  animation: gradient 500ms ease infinite;
 }
 
 /* Changes the size of the button when clicked */
 header article button:active {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* Editing the icon inside the button */
 header article button img {
-    height: 18px;
-    margin-right: 8px;
-    position: relative;
-    top: 3px;
+  height: 18px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
 }
 
 /* The arching background of the three column grid */
 .three-background {
-    background-color: white;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 4px;
-    z-index: 3000000;
+  background-color: white;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 4px;
+  z-index: 3000000;
 }
 
 /* This is the main grid inside the backrground container */
 .three-layer {
-    height: 70%;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-    display: grid;
-    grid-template: 100% / 1fr 1fr 1fr;
-    column-gap: 25px;
-    line-height: 1.6em;
-    color: var(--dark-gray);
-    opacity: 0%;
-    transition: all 300ms ease-in-out;
+  height: 70%;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  display: grid;
+  grid-template: 100% / 1fr 1fr 1fr;
+  column-gap: 25px;
+  line-height: 1.6em;
+  color: var(--dark-gray);
+  opacity: 0%;
+  transition: all 300ms ease-in-out;
 }
 
 /* The design of every box inside the grid */
 .three-layer article {
-    height: 80%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5%;
-    cursor: default;
-    position: relative;
+  height: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5%;
+  cursor: default;
+  position: relative;
 }
 
 /* Styling the images in the grid */
 .three-layer img {
-    height: 80px;
-    margin-bottom: 30px;
-    transition: all 200ms ease-in-out;
+  height: 80px;
+  margin-bottom: 30px;
+  transition: all 200ms ease-in-out;
 }
 /* The styling of the h2 elements in the grid */
 .three-layer h2 {
-    margin-bottom: 20px;
-    transition: all 100ms ease-in-out;
+  margin-bottom: 20px;
+  transition: all 100ms ease-in-out;
 }
 
 .three-layer article:hover h2 {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .three-layer article:hover img {
-    height: 100px;
+  height: 100px;
 }
 
 /* Changing the font size and opacity to paragraph elements */
 .three-layer p {
-    font-size: 14px;
-    opacity: 80%;
+  font-size: 14px;
+  opacity: 80%;
 }
 
 /* This is the background section for my intro */
 #intro-background {
-    height: 800px;
-    background-color: var(--light-white);
-    display: flex;
-    align-items: center;
+  height: 800px;
+  background-color: var(--light-white);
+  display: flex;
+  align-items: center;
 }
 
 /* The grid layout for the intro */
 .intro-grid {
-    width: 85%;
-    height: 70%;
-    margin: auto;
-    display: grid;
-    align-items: center;
-    grid-template: 100% / 1fr 2fr;
-    column-gap: 5%;
-    opacity: 0%;
-    transition: all 200ms ease-in-out;
+  width: 85%;
+  height: 70%;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  grid-template: 100% / 1fr 2fr;
+  column-gap: 5%;
+  opacity: 0%;
+  transition: all 200ms ease-in-out;
 }
 
 /* This is the styling for the block of text */
 .intro-grid article {
-    background-color: var(--white);
-    width: 100%;
-    padding: 40px;
-    border-radius: 20px;
-    position: relative;
+  background-color: var(--white);
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
 }
 
 /* Styles the quote arrow on the left side of the article */
 .intro-grid .arrow {
-    height: 100px;
-    width: auto;
-    position: absolute;
-    left: -15px;
+  height: 100px;
+  width: auto;
+  position: absolute;
+  left: -15px;
 }
 
 /* This is optimising the image in the grid */
 .intro-grid .pro-pic {
-    height: 50%;
-    width: auto;
-    border-radius: 50%;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+  height: 50%;
+  width: auto;
+  border-radius: 50%;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 /* Minor change to the margin of the h1 element */
 .intro-grid h1 {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 /* Some minor styling to the paragraph elements */
 .intro-grid p {
-    font-size: 15px;
-    opacity: 80%;
-    padding-right: 50px;
+  font-size: 15px;
+  opacity: 80%;
+  padding-right: 50px;
 }
 
 /* The button in the article */
 .intro-grid button {
-    margin-top: 35px;
-    transition: all 100ms ease-in-out;
+  margin-top: 35px;
+  transition: all 100ms ease-in-out;
 }
 
 /* Changes the color of the button when hovered on */
 .intro-grid button:hover {
-    background-color: var(--dark-gray);
+  background-color: var(--dark-gray);
 }
 
 /* Changes the size of the button when clicked */
 .intro-grid button:active {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* The book iocon inside the button */
 .intro-grid .book {
-    height: 15px;
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
+  height: 15px;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
 }
 
 /* This is the background for the skills */
 #skills-background {
-    height: 700px;
-    display: flex;
-    align-items: center;
-    cursor: default;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 
 /* This is the grid layout for the skills */
 .skills-grid {
-    width: 85%;
-    margin: auto;
-    height: 50%;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 100%;
-    row-gap: 40px;
-    opacity: 0%;
-    transition: all 200ms ease-in-out;
+  width: 85%;
+  margin: auto;
+  height: 50%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 100%;
+  row-gap: 40px;
+  opacity: 0%;
+  transition: all 200ms ease-in-out;
 }
 
 /* Adds padding to the top and bottom of each div */
 .skills-grid div {
-    padding: 20px 00px;
-    display: flex;
-    align-items: center;
+  padding: 20px 00px;
+  display: flex;
+  align-items: center;
 }
 
 /* Makes the image inline */
 .skills-grid div img {
-    display: inline-block;
-    height: 40px;
+  display: inline-block;
+  height: 40px;
 }
 
 .skills-grid div:hover img {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 /* Makes the paragraphs inline */
 .skills-grid div p {
-    display: inline-block;
-    margin-left: 15px;
-    opacity: 100%;
+  display: inline-block;
+  margin-left: 15px;
+  opacity: 100%;
 }
 
 /* First section of skills with grid layout */
 .skills-one {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    row-gap: 15px;
-    padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  row-gap: 15px;
+  padding-bottom: 10px;
 }
 
 /* Second section of skills with grid layout */
 .skills-two {
-    padding-top: 20px;
-    display: grid;
-    grid-template: 100% / repeat(3, 1fr);
+  padding-top: 20px;
+  display: grid;
+  grid-template: 100% / repeat(3, 1fr);
 }
 
 /* The grid layout for my works */
 #works-grid {
-    height: 600px;
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template: 100% / 1fr 1fr;
-    column-gap: 100px;
-    align-items: center;
-    cursor: default;
-    padding-bottom: 200px;
-    opacity: 0%;
-    transition: all 200ms ease-in-out;
+  height: 600px;
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template: 100% / 1fr 1fr;
+  column-gap: 100px;
+  align-items: center;
+  cursor: default;
+  padding-bottom: 200px;
+  opacity: 0%;
+  transition: all 200ms ease-in-out;
 }
 
 /* The sub grid layout for my work content */
 .works-boxes {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    grid-gap: 25px;
-    height: 65%;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 25px;
+  height: 65%;
 }
 
 /* To select every box inside the sub grid */
 .works-boxes div {
-    box-shadow: 0px 0px 20px #353a3f18;
-    border-radius: 10px;
-    padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.055);
-    cursor: pointer;
+  box-shadow: 0px 0px 20px #353a3f18;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  cursor: pointer;
 }
 
 /* Changes the size when you hover */
 .works-boxes div:hover {
-    width: 95%;
-    height: 95%;
+  width: 95%;
+  height: 95%;
 }
 
 /* Shrinks the size when you click */
 .works-boxes div:active {
-    width: 92%;
-    height: 92%;
+  width: 92%;
+  height: 92%;
 }
 
 .works-boxes div:hover h2,
 .works-boxes div:hover p {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 /* To edit the h2 elements inside of the boxes */
 .works-boxes h2 {
-   font-size: 16px;
-   margin: 10px 0px;
+  font-size: 16px;
+  margin: 10px 0px;
 }
 
 /* To edit the p elements inside of the boxes */
 .works-boxes p {
-    font-size: 14px;
- }
+  font-size: 14px;
+}
 
- /* To style the icons inside the mini grid */
- .icon-img {
-     height: 30px;
-     opacity: 80%;
-     margin-bottom: 25px;
- }
+/* To style the icons inside the mini grid */
+.icon-img {
+  height: 30px;
+  opacity: 80%;
+  margin-bottom: 25px;
+}
 
- #cont {
-     height: 37px !important;
- }
+#cont {
+  height: 40px !important;
+}
 
 /* This how I do the dynamic grid layout selected on boxes two and four */
 .down-move {
-    position: relative;
-    top: 30px;
+  position: relative;
+  top: 30px;
 }
 
 /* THIS IS TO MAKE SURE THAT JAVASCRIPT WORLD IS LARGER THAN ANY OTHER ELEMENT TO MEET THE CRITERIA */
 .small {
-    width: 80%;
+  width: 80%;
 }
 
 /* Added margin to h1 text */
 .works-text h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* Added margin to the button */
 .works-text button {
-    margin-top: 20px;
-    position: relative;
-    transition: all 100ms ease-in-out;
-    z-index: 1003;
+  margin-top: 20px;
+  position: relative;
+  transition: all 100ms ease-in-out;
+  z-index: 1003;
 }
 
 /* The dot pattern outside of the button */
 .works-text button img {
-    position: absolute;
-    height: 30px;
-    opacity: 10%;
-    right: -15px;
-    bottom: -10px;
-    z-index: 1002;
+  position: absolute;
+  height: 30px;
+  opacity: 10%;
+  right: -15px;
+  bottom: -10px;
+  z-index: 1002;
 }
 
 /* Changes the button appearence on hover */
 .works-text button:hover {
-    background-color: var(--dark-gray);
+  background-color: var(--dark-gray);
 }
 
 /* Changes the button appearence on active */
-.works-text button:active  {
-    font-size: 14px;
+.works-text button:active {
+  font-size: 14px;
 }
 
 /* Adding a margin to the article text to the right of the works section */
 .works-text p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* The main scale background for the contact form */
 #contact-background {
-    background-color: var(--light-white);
-    height: 600px;
-    position: relative;
+  background-color: var(--light-white);
+  height: 600px;
+  position: relative;
 }
 
 /* This is an experimental element that adds dimension to the page */
 .gray-box {
-    border-top: 2px dashed var(--dark-gray);
-    border-left: 2px dashed var(--dark-gray);
-    height: 500px;
-    width: 50%;
-    position: absolute;
-    top: -25px;
-    left: 10%;
-    opacity: 20%;
+  border-top: 2px dashed var(--dark-gray);
+  border-left: 2px dashed var(--dark-gray);
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  top: -25px;
+  left: 10%;
+  opacity: 20%;
 }
 
 /* The main header for the contact section */
 .lets-work {
-    text-align: center;
-    padding-top: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .lets-work h1 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* The mini grid for the contact section */
 .contact-grid {
-    margin: 50px auto;
-    height: 200px;
-    width: 80%;
-    display: grid;
-    grid-template: 100% / repeat(3, 1fr);
-    column-gap: 50px;
+  margin: 50px auto;
+  height: 200px;
+  width: 80%;
+  display: grid;
+  grid-template: 100% / repeat(3, 1fr);
+  column-gap: 50px;
 }
 
 /* Edtis the display for each article section */
 .contact-grid article {
-    background-color: var(--white);
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.068);
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.068);
 }
 
 /* Edits the h2 elements inside of the article */
-.contact-grid article  h2 {
-    border-top: 1px solid rgba(0, 0, 0, 0.075);
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-    font-weight: var(--bold);
+.contact-grid article h2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  font-weight: var(--bold);
 }
 
 .contact-grid article p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* Edits the icon element inside of the article */
 .contact-grid article img {
-    height: 40px;
-    margin-top: 20px;
-    opacity: 80%;
+  height: 40px;
+  margin-top: 20px;
+  opacity: 80%;
 }
 /* Just the basic styling of the footer */
 footer {
-    background-color: var(--white);
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: var(--light);
-    font-size: 14px;
-    opacity: 60%;
-    cursor: default;
+  background-color: var(--white);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--light);
+  font-size: 14px;
+  opacity: 60%;
+  cursor: default;
 }
 
 .resume {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: row;
-    grid-column: 2;
-    justify-content: center;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  justify-content: center;
 }
 
 .resume-button {
-    background-color: var(--dark-gray);
-    transition: 150ms ease-in-out;
+  background-color: var(--dark-gray);
+  transition: 150ms ease-in-out;
 }
 
 .resume-button:hover {
-    opacity: 70%;
+  opacity: 70%;
 }
 
 /* Below are media queries */
 
 @media screen and (max-width: 950px) {
+  /* The grid layout for my works */
+  #works-grid {
+    height: 800px;
+    grid-template: 1fr 3fr / 100%;
+  }
 
-    /* The grid layout for my works */
-    #works-grid {
-        height: 800px;
-        grid-template: 1fr 3fr / 100%;
-    }
-    
-    .works-text {
-        text-align: center;
-    }
+  .works-text {
+    text-align: center;
+  }
 
-    /* The sub grid layout for my work content */
-    .works-boxes {
-        grid-row: 2;
-    }
+  /* The sub grid layout for my work content */
+  .works-boxes {
+    grid-row: 2;
+  }
 
-    #contact-background {
-        height: 1000px;
-    }
+  #contact-background {
+    height: 1000px;
+  }
 
-    /* The mini grid for the contact section */
-    .contact-grid {
-        grid-template: 1fr 1fr 1fr / 100%;
-        row-gap: 25px;
-        height: 65%;
-    }
+  /* The mini grid for the contact section */
+  .contact-grid {
+    grid-template: 1fr 1fr 1fr / 100%;
+    row-gap: 25px;
+    height: 65%;
+  }
 
-    .resume {
-        margin-top: 0px;
-        grid-column: auto;
-    }
+  .resume {
+    margin-top: 0px;
+    grid-column: auto;
+  }
 
-    .social-text {
-        padding-bottom: 30px;
-    }
+  .social-text {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-
-    .three-layer article {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5%;
-    }
+  .three-layer article {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5%;
+  }
 }
 
 @media screen and (max-width: 770px) {
+  /* Makes the links dissapear */
+  nav section {
+    display: none;
+  }
 
-    /* Makes the links dissapear */
-    nav section {
-        display: none;
-    }
+  .social {
+    display: none;
+  }
 
-    .social {
-        display: none;
-    }
+  .burger {
+    display: block;
+    grid-column: 5;
+    padding: 0px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    opacity: 80%;
+  }
 
-    .burger {
-        display: block;
-        grid-column: 5;
-        padding: 0px;
-        width: 50px;
-        height: 40px;
-        cursor: pointer;
-        position: relative;
-        left: 10px;
-        opacity: 80%;
-    }
+  .burger:hover {
+    opacity: 50%;
+  }
 
-    .burger:hover {
-        opacity: 50%;
-    }
+  /* Changes the overall padding of the header box */
+  header article {
+    padding: 40px;
+  }
 
-    /* Changes the overall padding of the header box */
-    header article {
-        padding: 40px;
-    }
+  /* Changes the header grid layout */
+  #header-grid {
+    margin: auto;
+    display: grid;
+    width: 90%;
+    height: 85%;
+    grid-template: 100% / 100%;
+    align-items: center;
+  }
 
+  /* This is the up button that take you to the top of the page */
+  .up-button {
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+  }
 
-    /* Changes the header grid layout */
-    #header-grid {
-        margin: auto;
-        display: grid;
-        width: 90%;
-        height: 85%;
-        grid-template: 100% / 100%;
-        align-items: center;
-    }
+  .up-button:hover {
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+  }
 
-    /* This is the up button that take you to the top of the page */
-    .up-button {
-        right: 20px;
-        bottom: 20px;
-        width: 30px;
-    }
+  /* Changes some values for mobile restrictions */
+  .white-corner {
+    grid-column: 1;
+    right: 0;
+    bottom: -10;
+    margin-right: -6%;
+  }
 
-    .up-button:hover {
-        right: 20px;
-        bottom: 20px;
-        width: 30px;
-    }
+  /* Makes the folder icon vanish */
+  .folder {
+    display: none;
+  }
 
-    /* Changes some values for mobile restrictions */
-    .white-corner {
-        grid-column: 1;
-        right: 0;
-        bottom: -10;
-        margin-right: -6%;
-    }
+  /* Changes the height of the background to be longer for mobile */
+  .three-background {
+    height: 1700px;
+  }
 
-    /* Makes the folder icon vanish */
-    .folder {
-        display: none;
-    }
+  /* Changes the grid layout to a row order */
+  .three-layer {
+    height: 90%;
+    width: 85%;
+    grid-template: 1fr 1fr 1fr / 100%;
+  }
 
-    /* Changes the height of the background to be longer for mobile */
-    .three-background {
-        height: 1700px;
-    }
+  .three-layer article {
+    height: 80%;
+  }
 
-    /* Changes the grid layout to a row order */
-    .three-layer {
-        height: 90%;
-        width: 85%;
-        grid-template: 1fr 1fr 1fr / 100%;
-    }
+  /* Changes the height for mobile */
+  #intro-background {
+    height: 100%;
+    background-color: var(--light-white);
+  }
 
-    .three-layer article {
-        height: 80%;
-    }
+  .intro-grid {
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    grid-template: 0.7fr 1fr/ 100%;
+    row-gap: 35px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 
-    /* Changes the height for mobile */
-    #intro-background {
-        height: 100%;
-        background-color: var(--light-white);
-    }
-    
-    .intro-grid {
-        width: 90%;
-        height: 100%;
-        align-items: center;
-        grid-template: 0.7fr 1fr/ 100%;
-        row-gap: 35px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
+  .intro-grid .pro-pic {
+    grid-row: 1;
+    width: 200px;
+    height: auto;
+    margin: auto;
+  }
 
-    .intro-grid .pro-pic {
-        grid-row: 1;
-        width: 200px;
-        height: auto;
-        margin: auto;
-    }
-    
-    /* Centered the content inside the article */
-    .intro-grid article {
-        grid-row: 2;
-        text-align: center;
-    
-    }
+  /* Centered the content inside the article */
+  .intro-grid article {
+    grid-row: 2;
+    text-align: center;
+  }
 
-    /* Got rid of the non needed padding */
-    .intro-grid p {
-        padding-right: 0px;
-    }
+  /* Got rid of the non needed padding */
+  .intro-grid p {
+    padding-right: 0px;
+  }
 
-    /* Made the quote triangel on top of the article */
-    .intro-grid .arrow {
-        transform: rotate(90deg);
-        height: 80px;
-        width: auto;
-        position: absolute;
-        top: -40px;
-        left: 45%;
-        right: 45%;
-    }
+  /* Made the quote triangel on top of the article */
+  .intro-grid .arrow {
+    transform: rotate(90deg);
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top: -40px;
+    left: 45%;
+    right: 45%;
+  }
 
-    /* Made the height of the skills grid larger */
-    .skills-grid {
-        position: relative;
-        top: 20px;
-        height: 80%;
-    }
+  /* Made the height of the skills grid larger */
+  .skills-grid {
+    position: relative;
+    top: 20px;
+    height: 80%;
+  }
 
-    /* Aligned the h1 text in the center */
-    .skills-grid h1 {
-        display: flex;
-        align-items: center;
-    }
+  /* Aligned the h1 text in the center */
+  .skills-grid h1 {
+    display: flex;
+    align-items: center;
+  }
 
-    /* First section of skills with grid layout */
-    .skills-one {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-        display: grid;
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    }
+  /* First section of skills with grid layout */
+  .skills-one {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
 
-    /* Second section of skills with grid layout */
-    .skills-two {
-        display: grid;
-        grid-template: 100% / repeat(2, 1fr);
-    }
+  /* Second section of skills with grid layout */
+  .skills-two {
+    display: grid;
+    grid-template: 100% / repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 500px) {
+  /* Increased the height for mobile */
+  #works-grid {
+    margin-top: 100px;
+    height: 1000px;
+    grid-template: 1fr 3fr / 100%;
+  }
 
-    /* Increased the height for mobile */
-    #works-grid {
-        margin-top: 100px;
-        height: 1000px;
-        grid-template: 1fr 3fr / 100%;
-    }
+  /* Made the grid one column for mobile */
+  .works-boxes {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 100%;
+    grid-gap: 25px;
+    height: 90%;
+  }
 
-    /* Made the grid one column for mobile */
-    .works-boxes {
-        display: grid;
-        grid-template: 1fr 1fr 1fr 1fr / 100%;
-        grid-gap: 25px;
-        height: 90%;
-    }
-
-    /* Got rid of the relative positioning for mobile */
-    .down-move {
-        position: static;
-    }
+  /* Got rid of the relative positioning for mobile */
+  .down-move {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 330px) {
+  /* Made the skills height bigger for mobile */
+  #skills-background {
+    height: 900px;
+  }
 
-     /* Made the skills height bigger for mobile */
-     #skills-background {
-        height: 900px;
-    }
+  /* Changes width of overall grid */
+  .skills-grid {
+    width: 75%;
+  }
 
-    /* Changes width of overall grid */
-    .skills-grid {
-        width: 75%;
-    }
+  /* Make the first skills list into one column */
+  .skills-one {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    display: grid;
+    grid-template: repeat(5, 1fr) / 100%;
+  }
 
-    /* Make the first skills list into one column */
-    .skills-one {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-        display: grid;
-        grid-template: repeat(5, 1fr) / 100%;
-    }
-
-    /* Make the second skills list into one column */
-    .skills-two {
-        display: grid;
-        grid-template: repeat(2, 1fr) / 100%;
-    }
+  /* Make the second skills list into one column */
+  .skills-two {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 100%;
+  }
 }
