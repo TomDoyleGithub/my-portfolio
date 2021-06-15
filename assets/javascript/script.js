@@ -1,20 +1,19 @@
-var navigation = document.getElementById("page-top");
-var headerInformation = document.getElementById("header-grid");
-var threeGrid = document.getElementsByClassName("three-layer");
+let navigation = document.getElementById("page-top");
+let headerInformation = document.getElementById("header-grid");
+let threeGrid = document.getElementsByClassName("three-layer");
 let anchorList = document.querySelectorAll(".scroll"); 
-var mePage = document.querySelector(".intro-grid")
-var learnMoreButton = mePage.children[1].children[4];
-var skillsPage = document.querySelector(".skills-grid");
-var firstSkillsList = skillsPage.children[1].children[0];
-var worksPage = document.querySelector("#works-grid");
-var worksInfo = worksPage.children[1].children[2];
-var upButton = $(".up-button");
-var contactSection = document.querySelector("#contact-background").children[1].children[2];
-console.log(contactSection);
-var burgerButton = $(".burger");
-var section = $(".navigation-section")
-var cross = $(".cross")
-var navLinks = $(".nav-link")
+let mePage = document.querySelector(".intro-grid")
+let learnMoreButton = mePage.children[1].children[4];
+let skillsPage = document.querySelector(".skills-grid");
+let firstSkillsList = skillsPage.children[1].children[0];
+let worksPage = document.querySelector("#works-grid");
+let worksInfo = worksPage.children[1].children[2];
+let upButton = $(".up-button");
+let contactSection = document.querySelector("#contact-background").children[1].children[2];
+let burgerButton = $(".burger");
+let section = $(".navigation-section")
+let cross = $(".cross")
+let navLinks = $(".nav-link")
 
 // Hides the mobile navigation when you click on a link
 navLinks.on("click", function() {
@@ -22,11 +21,11 @@ navLinks.on("click", function() {
 })
 
 // Displays the movile navigation menu
-function mobileNavCreation () {
+let mobileNavCreation = () => {
     section.css({display: 'block'});
 }
 
-function movileNavDelete () {
+let movileNavDelete = () => {
     section.css({display: 'none'});
 }
 
@@ -35,9 +34,9 @@ burgerButton.on("click", mobileNavCreation)
 cross.on("click", movileNavDelete)
 
 // Function for the navigation fade in
-function navFadeIn () {
-    var navInterval = setInterval(function() {
-        var seconds = 0;
+let navFadeIn = () => {
+    let navInterval = setInterval(function() {
+        let seconds = 0;
         seconds++
         if (seconds >= 1 && seconds < 3) {
             navigation.style.opacity = "100%";
@@ -48,9 +47,9 @@ function navFadeIn () {
 };
 
 // Function for the header fade in
-function headFadeIn () {
-    var headInterval = setInterval(function() {
-        var otSeconds = 0;
+let headFadeIn = () => {
+    let headInterval = setInterval(function() {
+        let otSeconds = 0;
         otSeconds++
         if (otSeconds >= 1 && otSeconds < 3) {
             headerInformation.children[0].style.opacity = "100%"
@@ -71,7 +70,7 @@ anchorList.forEach (function(link) {
 })
 
 // If they are on Desktop it will run the scrollFades function, If not, then it keeps the elements at 100%
-var pageWidth = window.innerWidth;
+let pageWidth = window.innerWidth;
 if (pageWidth > 771) {
     scrollFades();
 } else {
